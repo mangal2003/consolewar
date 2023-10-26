@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#playground {
+  max-width: 320px;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+}
+#target {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60px;
+  position: fixed;
+  bottom: 13%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#targetbody1,
+#targetbody3,
+#targetbody8 {
+  opacity: 0;
+  height: 21px;
+  width: 21px;
+}
+#targetbody2,
+#targetbody4,
+#targetbody5,
+#targetbody9,
+#targetbody7,
+#targetbody6 {
+  background-color: rgb(26, 26, 60);
+  color: rgb(26, 26, 60);
+  margin: -1px;
+  height: 21px;
+  width: 21px;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar .numbers button {
+  min-height: 50px;
+  max-height: 50px;
+  max-width: 80px;
+  min-width: 80px;
+  background-color: aliceblue;
+  padding: 2px;
+  font-weight: 800;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#navbar .numbers button input {
+  width: 100%;
+  border: none;
+  background-color: aliceblue;
+}
+.stats {
+  color: rgb(255, 0, 55);
+}
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 45px;
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#buttons div {
+  margin: 60px;
+  margin-bottom: 0;
+}
+#noAvailability {
+  height: 100vh;
+  background-color: rgb(201, 93, 93);
+  color: black;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  text-align: center;
+}
+
+#bombs {
+  height: 80vh;
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.bullet0 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: black;
+  border-radius: 50%;
+  left: 0;
+}
+
+.bullet1 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: black;
+  border-radius: 50%;
+  left: 15%;
+}
+
+.bullet2 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: black;
+  border-radius: 50%;
+  left: 30%;
+}
+
+.bullet3 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: black;
+  border-radius: 50%;
+  left: 45%;
+}
+
+.bullet4 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: black;
+  border-radius: 50%;
+  left: 60%;
+}
+
+.bullet5 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: black;
+  border-radius: 50%;
+  left: 75%;
+}
+
+.bullet6 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: black;
+  border-radius: 50%;
+  left: 90%;
+}
+
+#intro {
+  padding: auto 15px;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  height: 100vh;
+  font-family: MV Boli;
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(59, 59, 69);
+  color: rgb(107, 230, 25);
+}
+
+#intro button {
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 20px;
+  font-family: MV Boli;
+  font-weight: 800;
+  border-color: blue;
+  color: rgb(0, 0, 255);
+}
+#rules {
+  position: absolute;
+  z-index: -1;
+  height: 90vh;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto 30px;
+  opacity: 0;
+  background-color: aquamarine;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+#hide {
+  position: absolute;
+  z-index: 0;
+  top: 15px;
+  right: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  border: 3px solid rgb(255, 0, 0);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#outro {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  flex-direction: column;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
