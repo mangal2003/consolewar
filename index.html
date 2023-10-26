@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAR OF TITANS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="noAvailability">
+        War of the titans is currently unavailable on this screen size..!
+        <br>
+        Switch to smaller screen size to Enjoy the GAME.
+
+
+    </div>
+    <div id="body">
+        <div id="intro">
+            <h2>WELCOME HERO🦸‍♂️🦸‍♀️</h2>
+            <br> <br>
+            <h3>Are you ready to stand out in front of the <br> "demon of JavaScript"..!</h3>
+            <br> <br>
+            <h3>Click on START button to PLAY</h3>
+            <br><br>
+            <button onclick="generateBullet()"> START</button>
+            <br><br>
+            <button onclick="rules()">HOW TO PLAY</button>
+            <br><br>
+            <br><br>
+            <br><br>
+            <h5>Be alert : HE IS ON 🔥🧨 FROM THE VERY FIRST MOMENT</h5>
+        </div>
+
+        <div id="rules">
+            <div id="hide">
+                <div id="cross" onclick="hide()">&cross;</div>
+            </div>
+            <p style="padding: 20px;">
+                1. You have to save yourself from falling blocks. <br>
+                2. You are provided two buttons to move left or right. <br>
+                3. You can only save yourself; No attacking power given to you. <br>
+                
+            </p>
+        </div>
+
+        <div id="playground">
+
+            <div id="navbar">
+                <div class="numbers"><button>SCORE <div class="stats" id="score">0</div></button></div>
+                <div class="numbers"><button>LIVES <div class="stats" id="lives">3</div></button></div>
+
+            </div>
+            <div id="bombs">
+
+            </div>
+
+            <div id="target">
+                <div id="targetbody1"></div>
+                <div id="targetbody2"></div>
+                <div id="targetbody3"></div>
+                <div id="targetbody4"></div>
+                <div id="targetbody5"></div>
+                <div id="targetbody6"></div>
+                <div id="targetbody7"></div>
+                <div id="targetbody8"></div>
+                <div id="targetbody9"></div>
+            </div>
+            <div id="buttons">
+                <div id="goleft">
+                    <i id="golefticon" class="ri-arrow-left-circle-fill" onclick="moveLeft()"></i>
+                </div>
+
+                <div id="goright">
+                    <i id="gorighticon" class="ri-arrow-right-circle-fill" onclick="moveRight()"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="outro">
+        <p>
+        <h2>🏴‍☠️ GAME OVER 🏴‍☠️ </h2>
+        <br><br>
+        <h3>YOUR SCORE IS : <span id="finalScore">-</span></h3>
+        <br><br><br>
+        <h5>REFRESH TO RESTART</h5>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
